@@ -59,4 +59,10 @@ const tweets = [
 
     // Je lie mon élément <li> à la tweets-list dans le HTML
     ul.appendChild(li)
+    
+    // J'ajoute la classe "favorite" aux tweets dont le nombre de likes est sup à 10
+    if (tweet.likes > 10) {
+      li.classList.add("favorite");
+    }
+
   });
